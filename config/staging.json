@@ -1,0 +1,23 @@
+{
+    "staging": {
+      "name": "Producer - Staging Mode",
+      "port": 5002,
+      "mode": "staging",
+      "protocol": "http",
+      "serverUrl": "",
+      "serverUrlWebUrlLink": "",
+      "database": {
+        "multipleStatements": true,
+        "host": "",
+        "user": "",
+        "password": "",
+        "database": ""
+      },
+      "email": {
+        "host": "",
+        "port": "",
+        "username": "",
+        "password": ""
+      }
+    }
+  }
