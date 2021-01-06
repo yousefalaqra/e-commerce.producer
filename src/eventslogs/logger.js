@@ -1,12 +1,13 @@
 // create a rolling file logger based on date/time that fires process events
-const opts = {
-    errorEventName:'error',
-        logDirectory:'./generallogs', // NOTE: folder must exist and be writable...
-        fileNamePattern:'roll-<DATE>.log',
-        dateFormat:'YYYY.MM.DD'
-};
-const log = require('simple-node-logger').createRollingFileLogger( opts );
+const SimpleNodeLogger = require('simple-node-logger'),
+    opts = {
+        logFilePath:'roll-2021.01.06.log',
+        timestampFormat:'YYYY-MM-DD HH:mm:ss.SSS'
+    },
+log = SimpleNodeLogger.createSimpleLogger( opts );
 
-export const info = (event, dataToLog) => {
+module.exports = {
+  info: (event, dataToLog) => {
     log.info(event, dataToLog);
-}
+  },
+};
