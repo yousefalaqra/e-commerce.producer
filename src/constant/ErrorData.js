@@ -95,8 +95,8 @@ module.exports = {
       },
       {
         status: "502",
-        message: "JWT token Error",
-        data: "Error occure while genrating user token."
+        message: "Shopify webhock Error",
+        data: "Error occure while requesting shopify api."
       },
       {
         status: "503",

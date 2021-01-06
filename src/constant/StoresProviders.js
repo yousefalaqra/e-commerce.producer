@@ -1,0 +1,3 @@
+module.exports = {
+    SHOPIFY: 'Shopify',
+  }

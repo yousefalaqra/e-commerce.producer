@@ -22,6 +22,8 @@ function haltOnTimedout(req, res, next) {
 }
 
 mode = process.env.NODE_ENV;
+// temp port config for hurko deployment
+const PORT = process.env.PORT;
 
 const start = () => (
     app.listen(config.get(`${mode}.port`), () => {
@@ -34,4 +36,9 @@ const start = () => (
     })
   );
 
-start();
+  const prodStart = () => {
+    app.listen(PORT, () => console.log('app is running!'))
+  }
+
+// start();
+prodStart();
