@@ -9,8 +9,8 @@ module.exports = {
     // STEP 2: Build the request body payload
     let requestBody = buildRequestBodyPayload();
     // call http clinet service to register into e-commerce store web-hocks
-    let response = webHocksService.subscribeToShopify(apiURL, requestBody);
-    logger.info('register to shopif webhock response', JSON.stringify(response));
+    // let response = webHocksService.subscribeToShopify(apiURL, requestBody);
+    // logger.info('register to shopif webhock response', JSON.stringify(response));
   },
 };
 
